@@ -27,6 +27,7 @@ RUN \
 # Add user
     useradd -U -d /config -s /bin/false plex && \
     usermod -G users plex && \
+    chmod -R a+w /run && \
 
 # Setup directories
     mkdir -p \
